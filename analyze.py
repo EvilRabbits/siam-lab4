@@ -13,7 +13,7 @@ def auth_handler():
 def get_friends(login, password, enable_two_factor):
     print("Получаем всех ваших друзей")
 
-    add_my = True
+    add_me = True
     start_id = None
 
     if enable_two_factor:
@@ -31,7 +31,7 @@ def get_friends(login, password, enable_two_factor):
     my_id = start_id if start_id else api.users.get()[0]["id"]
     friend = api.friends.get(user_id=my_id)["items"]
 
-    if add_my:
+    if add_me:
         friend.append(my_id)
 
     friends, __errors = vk_api.vk_request_one_param_pool(
