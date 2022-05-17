@@ -81,7 +81,7 @@ def main():
         print("""
 Неправильный запуск
     python analyze.py [логин] [пароль] [включить двухфакторку]
-Пример запуска: python analyze.py 79666666666 superpassword false
+Пример запуска: python analyze.py +79666666666 superpassword false
               """)
         return
 
