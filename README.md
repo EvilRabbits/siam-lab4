@@ -5,4 +5,4 @@
 ### Запуск
 `python analyze.py [логин] [пароль] [включить двухфакторку]`
 ### Пример запуска
-`python analyze.py +79666666666 superpassword false`
+`python analyze.py '+79666666666' 'superpassword' false`

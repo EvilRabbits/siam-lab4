@@ -80,11 +80,12 @@ def main():
         login = sys.argv[1]
         password = sys.argv[2]
         enable_two_factor = True if sys.argv[3] == "true" else False
-    except:
+    except Exception as e:
+        print(e)
         print("""
 Неправильный запуск
     python analyze.py [логин] [пароль] [включить двухфакторку]
-Пример запуска: python analyze.py +79666666666 superpassword false
+Пример запуска: python analyze.py '+79666666666' 'superpassword' false
               """)
         return
 
