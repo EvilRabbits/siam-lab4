@@ -40,6 +40,7 @@ def get_friends(login, password, enable_two_factor):
         key="user_id",
         values=friend,
     )
+    print("Все ваши друзья: ", len(friends))
 
     cleaned_friends = {}
     s = set(friend)
