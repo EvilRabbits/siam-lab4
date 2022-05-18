@@ -48,6 +48,8 @@ def get_friends(login, password, enable_two_factor):
         if len(t) > 0 and len(t) < 20:
             cleaned_friends[k] = t
 
+    print("Количесто друзей в сумме с вами: ", len(cleaned_friends))
+
     return cleaned_friends
 
 
