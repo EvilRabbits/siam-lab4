@@ -22,7 +22,7 @@ def get_friends(login, password, enable_two_factor):
         vk_session = vk_api.VkApi(login, password)
 
     try:
-        vk_session.auth(token_only=True)
+        vk_session.auth(token_only=False)
     except vk_api.AuthError as e:
         print(e)
         return
